@@ -1,7 +1,7 @@
 /*
  
  */
-package exemplo;
+package dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,12 +18,12 @@ public class DB {
     private final String SENHA = "senac";
     
     
-    public boolean getConexao() throws SQLException, ClassNotFoundException{
+    public boolean getConexao(){
         
         try {
             
         Class.forName(DRIVER); //String de Driver de conexão
-        Connection conexao = DriverManager.getConnection(
+        conexao = DriverManager.getConnection(
                 "BANCO", 
                 "USUARIO", 
                 "SENHA");  

@@ -1,7 +1,7 @@
 /*
 
  */
-package exemplo;
+package model;
 public class Usuario {
     private int id;
     private String nome;
@@ -29,6 +29,11 @@ public class Usuario {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "id=" + id + ", nome=" + nome + ", idade=" + idade + '}';
     }
    
     
